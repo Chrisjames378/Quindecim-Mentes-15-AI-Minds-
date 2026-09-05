@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-orbitron: 'Orbitron', -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #06070a;
+    color: #e2e8f0;
+  }
+}
+
+.font-display {
+  font-family: var(--font-orbitron);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom range styling for hardware synth dials */
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #121624;
+  border-radius: 4px;
+  height: 6px;
+  border: 1px solid #1f273d;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #00f3ff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 243, 255, 0.7);
+  transition: transform 0.1s ease;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* Neon glow utility accents */
+.glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.6);
+}
+
+.glow-purple {
+  text-shadow: 0 0 10px rgba(176, 0, 255, 0.6);
+}
+
+.glow-pink {
+  text-shadow: 0 0 10px rgba(255, 0, 127, 0.6);
+}
+
+.glow-amber {
+  text-shadow: 0 0 10px rgba(255, 183, 0, 0.6);
+}
+
+.box-glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.15);
+}
+
+.box-glow-purple {
+  box-shadow: 0 0 20px rgba(176, 0, 255, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090b12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e263d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2b3756;
+}

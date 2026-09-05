@@ -1,0 +1,6 @@
+{
+  "name": "Quindecima Neural Synthesizer",
+  "description": "8-layer multitimbral neural synthesizer powered by the 15 Quindecim Mentes AI sound-sculpting engine, featuring Hyper-FX, Euclidean polyrhythmic arpeggiator, and real-time audio visualization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
