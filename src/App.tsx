@@ -19,6 +19,7 @@ import {
   builtInPresets,
 } from './audio/presets';
 import { synth } from './audio/AudioEngine';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'synth' | 'mendes' | 'fx' | 'manual'>('synth');
@@ -443,6 +444,7 @@ export default function App() {
           />
         )}
       </main>
+      <Analytics />
     </div>
   );
 }
